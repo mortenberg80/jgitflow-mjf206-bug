@@ -20,7 +20,7 @@
             <plugin>
                 <groupId>external.atlassian.jgitflow</groupId>
                 <artifactId>jgitflow-maven-plugin</artifactId>
-                <version>1.0-m5</version>
+                <version>1.0-m5.1</version>
                 <configuration>
                     <goals>install</goals>
                     <allowSnapshots>true</allowSnapshots>
