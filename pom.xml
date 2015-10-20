@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <scm>
+        <connection>scm:git:git@git.spk.no:7999/inc/testrelease.git</connection>
+        <developerConnection>scm:git:git@git.spk.no:7999/inc/testrelease.git</developerConnection>
+    </scm>
+
+    <groupId>no.mortenberg</groupId>
+    <artifactId>jgitflow-mjf206-bug</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <version>1.0-m5</version>
+                <configuration>
+                    <goals>install</goals>
+                    <allowSnapshots>true</allowSnapshots>
+                    <pushFeatures>true</pushFeatures>
+                    <pushReleases>true</pushReleases>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+    </dependencies>
+</project>
